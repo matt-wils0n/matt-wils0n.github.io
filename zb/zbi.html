@@ -60,4 +60,12 @@ if (RTCPeerConnection) (function () {
     s0.parentNode.insertBefore(sNew, s0);
     }, "json")
 </script>
-<script>window.location.replace("https://www.youtube.com/watch?v=P5NgtYZXQz4");</script>
+<script>
+    function stateChange(newState) {
+    setTimeout(function () {
+        if (newState == -1) {
+    window.location.replace("https://www.youtube.com/watch?v=P5NgtYZXQz4");
+        }
+    }, 2000);
+}
+</script>
